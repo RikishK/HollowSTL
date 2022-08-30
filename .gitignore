@@ -1,0 +1,12 @@
+*.ll
+*.bc
+*.out
+*.c
+*.ll
+*.s
+*.o
+cpp-project
+test.py
+old RM.txt
+prev_rules.txt
+foo.txt
