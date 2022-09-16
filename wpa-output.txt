@@ -1,0 +1,115 @@
+Writing 'callgraph_initial.dot'...
+
+*********CallGraph Stats***************
+################ (program : check.bc)###############
+-------------------------------------------------------
+CalRetPairInCycle   0
+MaxNodeInCycle      0
+NodeInCycle         0
+TotalEdge           31
+TotalCycle          0
+TotalNode           39
+#######################################################
+
+*********General Stats***************
+################ (program : check.bc)###############
+AddrsNum            118
+TotalFieldObjects   13
+StoresNum           72
+FSObjNum            103
+FIObjNum            2
+GepsNum             51
+MaxStructSize       5
+IndCallSites        1
+TotalSVFStmts       358
+TotalPointers       446
+BBWith3Succ         0
+ReturnsNum          1
+VarArrayObj         0
+CopysNum            29
+ConstArrayObj       1
+CallsNum            7
+TotalPTASVFStmts    251
+TotalObjects        106
+FunctionObjs        39
+GlobalObjs          8
+HeapObjs            9
+StackObjs           48
+ConstStructObj      2
+VarStructObj        4
+NonPtrObj           59
+ConstantObj         0
+LocalVarInRecur     0
+TotalCallSite       32
+LoadsNum            50
+BBWith2Succ         6
+-------------------------------------------------------
+#######################################################
+
+*********Constraint Graph Stats***************
+################ (program : check.bc)###############
+-------------------------------------------------------
+AvgIn/OutEdge       0.920588
+AvgIn/OutAddrEdge   0.314706
+AvgIn/OutLoadEdge   0.0705882
+AvgIn/OutCopyEdge   0.414706
+MaxInAddrEdge       1
+MaxOutStoreEdge     2
+NumOfCGNode         610
+TotalValidNode      340
+AvgIn/OutStoreEdge  0
+TotalValidObjNode   109
+NumOfGeps           51
+NumOfCGEdge         206
+NumOfAddrs          107
+MaxOutAddrEdge      4
+NumOfLoads          24
+NumOfStores         41
+MaxOutLoadEdge      3
+NumOfCopys          90
+MaxOutCopyEdge      20
+MaxInStoreEdge      1
+MaxInLoadEdge       1
+MaxInCopyEdge       3
+#######################################################
+
+*********Andersen Pointer Analysis Stats***************
+################ (program : check.bc)###############
+-------------------------------------------------------
+AvgTopLvlPtsSize    0.943396
+AvgPtsSetSize       0.355155
+LoadStoreTime       0
+UpdateCGTime        0
+CopyGepTime         0
+SCCMergeTime        0
+SCCDetectTime       0
+CollapseTime        0
+TotalTime           0.001
+MaxNodesInSCC       2
+TotalPWCCycleNum    0
+TotalCycleNum       1
+IndEdgeSolved       0
+Iterations          4
+NodesInCycles       2
+MaxPtsSetSize       2
+NumOfSCCDetect      4
+IndCallSites        1
+DYFieldObjs         13
+MemObjects          106
+Pointers            444
+PointsToConstPtr    0
+NumOfFieldExpand    0
+PointsToBlkPtr      0
+DYFieldPtrs         2
+NumOfSFRs           0
+GepProcessed        50
+LoadProcessed       23
+CopyProcessed       55
+StoreProcessed      42
+AddrProcessed       108
+TotalObjects        119
+NullPointer         3
+TotalPointers       446
+#######################################################
+Writing 'callgraph_final.dot'...
+[AndersenWPA] Checking _Z9MUSTALIASPvS_

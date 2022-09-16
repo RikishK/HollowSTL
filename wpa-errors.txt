@@ -1,0 +1,2 @@
+[1;31m	 FAILURE :[1;0m_Z9MUSTALIASPvS_ check <id:576, id:578> at ()
+wpa: /home/rikish/svf2/SVF/lib/MemoryModel/PointerAnalysis.cpp:589: virtual void SVF::PointerAnalysis::validateSuccessTests(std::string): Assertion `false && "test case failed!"' failed.

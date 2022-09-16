@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <iostream>
 #include <initializer_list>
-#include <reverse_iterator>
+#include <iterator>
 using namespace std;
 
 template <typename T, int S>
@@ -12,26 +12,31 @@ class array{
 
     public:
         using value_type            = T;
+        using size_type             = size_t;
+        //todo difference type
+        using reference             = T&; 
+        using const_reference       = const T&;
         using pointer               = T*;
         using const_pointer         = const T;
-        using reference             = T&;
-        using const_reference       = const T&;
-        using size_type             = size_t;
-
+        
         typedef iterator_base<T>            iterator;
         typedef const iterator_base<T>      const_iterator;
 
         typedef reverse_iterator_base<T>         reverse_iterator;
         typedef const reverse_iterator_base<T>   const_reverse_iterator;
-
-    array();
-    array(initializer_list<T> i );
+        
+    array(){
+        my_size = S;
+        p = new T[S];
+    }
+    array(initializer_list<T> i);
     
     //ELEMENT ACCESS
 
     T& at(int index);
 
     T& operator[](int index);
+
 
     T& front();
 
@@ -41,6 +46,8 @@ class array{
 
     //iterators
     iterator begin();
+
+    const_iterator begin() const;
 
     iterator end();
 

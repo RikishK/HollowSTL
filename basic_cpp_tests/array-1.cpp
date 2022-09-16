@@ -14,7 +14,7 @@ class A {
 };
 
 int main(int argc, char **argv)
-{
+{ 
   int *ptr = &global_obj;
 
   array<const A *, 2> aarray;
